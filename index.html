@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script scr="https://cdn.freecodecamp.org/
-testable-projects-fcc/v1/bundle.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Project Landing Page Project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Product Landing Page</h1>
+  <header id="header">
+    <img id="header-img" src="https://png2.cleanpng.com/sh/3515becd86f0e80ce71185d373fbdec3/L0KzQYm3VsAyN5p0iJH0aYP2gLBuTfJqa6pohNc2c3jygH70jCVvfJJuhp9raXvoPbTCgBxqdpgyett0ZT31dbB7gfwuPZM2Sac8MkK2RrW7hsMvOGQ8TqQAMEC0RYOAWMYzOGY1SqQ9Nj7zfri=/kisspng-bicycle-shop-mountain-bike-cycling-bike-rental-5b11532236d4f3.0376250015278620502246.png"/>
+    <nav id="nav-bar">
+      <a class="nav-link"href="#learn-more">Learn More</a>
+      <a class="nav-link"href="#request-coupon">Request Coupon</a>
+      <a class="nav-link"href="#buy-on-amazon">Buy on Amazon</a>
+    </nav>
+    <section id="learn-more">
+      <h1>Specialized Bikes</h1>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KxCosY_LwTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>  
+    <section id="request-coupon">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" placeholder="email" name="email"></input>
+        <input id="submit" type="submit"></input>
+      </form>
+     </section>
+    <section id="buy-on-amazon"></section>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </header>
 </body>
-
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
