@@ -2,38 +2,109 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
-section {
-  padding: 30px;
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Exo 2', sans-serif;
+  background-color: rgb(104, 101, 101);
+  width: 100%
+}
+
+.top-nav {
+  width: 100%;
+  overflow: hidden;
+}
+
+header::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+#header-img {
+  width: 250px;
+  float: left;
 }
 
 .nav-link {
-  padding: 20px;
-  margin: 20px;
+  display: flex;
+  font-size: 16px;
+  padding: 14px 15px;
+  float: right;
+  transition: background .5s ease;
+}
+.nav-link:hover {
+  background-color: gray;
+}
+
+h1 {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#video {
+  display: flex;
+}
+
+#email {
+  display: block;
+  margin: auto;
+  width: 180;
+  padding: 8px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  transition: width .5s ease, background .5s ease;
+  background-color: lightgrey;
+}
+
+#email::placeholder {
+  opacity: 80%;
+}
+
+#email:hover {
+  background-color: #444;
+  width: 300px;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 8px;
+  border-radius: 50px;
+  width: 80px;
+  font-size: 14px;
+}
+
+submit:hover {
+  background-color: yellowgreen;
+}
+
+#video {
+  text-align: center;
+  padding: 3.5em;
+  margin: 0 auto;
 }
 
 .flex-container {
   display: flex;
+}
+
+footer {
+  display: flex;
   justify-content: center;
 }
- 
-#header-img {
-width: 60%;
-}
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
+li {
+  list-style-type: none;
+  padding: 1em;
+}
+
+@media only screen and (max-width: 550px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
